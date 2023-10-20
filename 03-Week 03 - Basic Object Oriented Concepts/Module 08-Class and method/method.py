@@ -24,3 +24,5 @@ my_phone = Phone()
 
 sms = my_phone.send_sms("2342342","sdfsasdfa asdfa")
 print(sms)
+
+print(my_phone.call())
