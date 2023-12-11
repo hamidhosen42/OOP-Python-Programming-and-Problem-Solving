@@ -4,6 +4,7 @@ class RideManager:
         self.__available_cars = []
         self.__available_bikes = []
         self.__available_cng = []
+        
 
     def add_a_vehicle(self, vehicle_type, vehicle):
         if vehicle_type == 'car':

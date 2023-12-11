@@ -10,3 +10,4 @@ class Aircraft:
     
     def __repr__(self) -> str:
         return f'Aircraft make {self.make} code: {self.code} type: {self.typ} range: {self.flight_range}'
+    
