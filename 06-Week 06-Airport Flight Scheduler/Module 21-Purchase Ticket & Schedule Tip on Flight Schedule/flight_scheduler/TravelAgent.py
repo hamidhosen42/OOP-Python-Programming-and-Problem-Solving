@@ -1,33 +1,33 @@
-# from All_Airports import AllAirports
-# from Air_Lines import AirLines
-# from Trip import Trip
-# from itertools import permutations
+from All_Airports import AllAirports
+from Air_Lines import AirLines
+from Trip import Trip
+from itertools import permutations
 
 
 class TravelAgent:
     def __init__(self, name) -> None:
         self.name = name
         self.trips = None
-        # self.all_airports = AllAirports()
-        # self.air_lines = AirLines()
-    # '''
-    #     params: 
-    #     start: starting city Code
-    #     end: destination city code
-    #     start_date: date when you want to start the trip
+        self.all_airports = AllAirports()
+        self.air_lines = AirLines()
+    '''
+        params: 
+        start: starting city Code
+        end: destination city code
+        start_date: date when you want to start the trip
 
-    #     return: 
-    #     aircraft, price
+        return: 
+        aircraft, price
 
-    #     notes: use airlines to select aircraft
-    # '''
+        notes: use airlines to select aircraft
+    '''
     def set_trip_one_city_one_way(self, start, end, start_date):
-        pass
-    #     price = self.all_airports.get_ticket_price(start, end)
-    #     distance = self.all_airports.distance_between_two_airports(start, end)
-    #     aircraft = self.air_lines.get_aircraft_by_distance(distance)
+        price = self.all_airports.get_ticket_price(start, end)
+        distance = self.all_airports.distance_between_two_airports(start,end)
+        aircraft = self.air_lines.get_aircraft_by_distance(distance)
     #     trip = Trip([start, end], aircraft, price, start_date, [start, end] )
     #     return trip
+        return [aircraft,price]
     
     # '''
     #     trip_info: [city0, city1, city2]
